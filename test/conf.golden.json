@@ -1,0 +1,73 @@
+[
+ {
+  "conf": "\u003c?xml version='1.0'?\u003e\n\u003c!DOCTYPE fontconfig SYSTEM 'fonts.dtd'\u003e\n\u003cfontconfig\u003e\n\t\u003c!-- CS2 Font Studio. Delete this file to remove all changes. --\u003e\n\t\u003c!-- state: {\"rules\":[{\"group\":\"Stratum2 Mono\",\"font\":\"Impact\",\"scale\":0.9},{\"group\":\"Stratum2 Condensed\",\"font\":\"\",\"scale\":1.2}],\"copied\":[\"notosans-impact.ttf\"]} --\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2 Mono\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"assign\"\u003e\u003cstring\u003eImpact\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"pattern\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2 Mono\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"prepend\" binding=\"strong\"\u003e\u003cstring\u003eImpact\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\" target=\"pattern\"\u003e\u003cstring\u003eStratum2 Mono\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"pixelsize\" mode=\"assign\"\u003e\u003ctimes\u003e\u003cname\u003epixelsize\u003c/name\u003e\u003cdouble\u003e0.9\u003c/double\u003e\u003c/times\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\" target=\"pattern\"\u003e\u003cstring\u003eStratum2 Condensed\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"pixelsize\" mode=\"assign\"\u003e\u003ctimes\u003e\u003cname\u003epixelsize\u003c/name\u003e\u003cdouble\u003e1.2\u003c/double\u003e\u003c/times\u003e\u003c/edit\u003e\u003c/match\u003e\n\u003c/fontconfig\u003e\n",
+  "state": {
+   "rules": [
+    {
+     "group": "Stratum2 Mono",
+     "font": "Impact",
+     "scale": 0.9
+    },
+    {
+     "group": "Stratum2 Condensed",
+     "font": "",
+     "scale": 1.2
+    }
+   ],
+   "copied": [
+    "notosans-impact.ttf"
+   ]
+  }
+ },
+ {
+  "conf": "\u003c?xml version='1.0'?\u003e\n\u003c!DOCTYPE fontconfig SYSTEM 'fonts.dtd'\u003e\n\u003cfontconfig\u003e\n\t\u003c!-- CS2 Font Studio. Delete this file to remove all changes. --\u003e\n\t\u003c!-- state: {\"rules\":[{\"group\":\"Stratum2 Mono\",\"font\":\"Impact\",\"scale\":1,\"weight\":700,\"italic\":true,\"width\":0.8},{\"group\":\"Stratum2\",\"font\":\"\",\"scale\":1,\"weight\":300}],\"copied\":null} --\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2 Mono\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"assign\"\u003e\u003cstring\u003eImpact\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"pattern\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2 Mono\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"prepend\" binding=\"strong\"\u003e\u003cstring\u003eImpact\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"pattern\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2 Mono\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"weight\" mode=\"assign\" binding=\"strong\"\u003e\u003cint\u003e200\u003c/int\u003e\u003c/edit\u003e\u003cedit name=\"slant\" mode=\"assign\" binding=\"strong\"\u003e\u003cconst\u003eitalic\u003c/const\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\" target=\"pattern\"\u003e\u003cstring\u003eStratum2 Mono\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"matrix\" mode=\"assign\"\u003e\u003ctimes\u003e\u003cname\u003ematrix\u003c/name\u003e\u003cmatrix\u003e\u003cdouble\u003e0.8\u003c/double\u003e\u003cdouble\u003e0.2\u003c/double\u003e\u003cdouble\u003e0\u003c/double\u003e\u003cdouble\u003e1\u003c/double\u003e\u003c/matrix\u003e\u003c/times\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"pattern\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"weight\" mode=\"assign\" binding=\"strong\"\u003e\u003cint\u003e50\u003c/int\u003e\u003c/edit\u003e\u003c/match\u003e\n\u003c/fontconfig\u003e\n",
+  "state": {
+   "rules": [
+    {
+     "group": "Stratum2 Mono",
+     "font": "Impact",
+     "scale": 1,
+     "weight": 700,
+     "italic": true,
+     "width": 0.8
+    },
+    {
+     "group": "Stratum2",
+     "font": "",
+     "scale": 1,
+     "weight": 300
+    }
+   ],
+   "copied": null
+  }
+ },
+ {
+  "conf": "\u003c?xml version='1.0'?\u003e\n\u003c!DOCTYPE fontconfig SYSTEM 'fonts.dtd'\u003e\n\u003cfontconfig\u003e\n\t\u003c!-- CS2 Font Studio. Delete this file to remove all changes. --\u003e\n\t\u003c!-- state: {\"rules\":[{\"group\":\"Stratum2\",\"font\":\"Arial\",\"scale\":1.15,\"italic\":true},{\"group\":\"A\\u0026B \\u003c\\\"x'\\u003e\",\"font\":\"Roboto\",\"scale\":1,\"width\":1.25}],\"copied\":null,\"textScale\":1.25} --\u003e\n\t\u003cmatch target=\"font\"\u003e\u003cedit name=\"pixelsize\" mode=\"assign\"\u003e\u003ctimes\u003e\u003cname\u003epixelsize\u003c/name\u003e\u003cdouble\u003e1.25\u003c/double\u003e\u003c/times\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"assign\"\u003e\u003cstring\u003eArial\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"pattern\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"prepend\" binding=\"strong\"\u003e\u003cstring\u003eArial\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\" target=\"pattern\"\u003e\u003cstring\u003eStratum2\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"pixelsize\" mode=\"assign\"\u003e\u003ctimes\u003e\u003cname\u003epixelsize\u003c/name\u003e\u003cdouble\u003e1.15\u003c/double\u003e\u003c/times\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"pattern\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eStratum2\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"slant\" mode=\"assign\" binding=\"strong\"\u003e\u003cconst\u003eitalic\u003c/const\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eA\u0026amp;B \u0026lt;\u0026#34;x\u0026#39;\u0026gt;\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"assign\"\u003e\u003cstring\u003eRoboto\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"pattern\"\u003e\u003ctest name=\"family\"\u003e\u003cstring\u003eA\u0026amp;B \u0026lt;\u0026#34;x\u0026#39;\u0026gt;\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"family\" mode=\"prepend\" binding=\"strong\"\u003e\u003cstring\u003eRoboto\u003c/string\u003e\u003c/edit\u003e\u003c/match\u003e\n\t\u003cmatch target=\"font\"\u003e\u003ctest name=\"family\" target=\"pattern\"\u003e\u003cstring\u003eA\u0026amp;B \u0026lt;\u0026#34;x\u0026#39;\u0026gt;\u003c/string\u003e\u003c/test\u003e\u003cedit name=\"matrix\" mode=\"assign\"\u003e\u003ctimes\u003e\u003cname\u003ematrix\u003c/name\u003e\u003cmatrix\u003e\u003cdouble\u003e1.25\u003c/double\u003e\u003cdouble\u003e0\u003c/double\u003e\u003cdouble\u003e0\u003c/double\u003e\u003cdouble\u003e1\u003c/double\u003e\u003c/matrix\u003e\u003c/times\u003e\u003c/edit\u003e\u003c/match\u003e\n\u003c/fontconfig\u003e\n",
+  "state": {
+   "rules": [
+    {
+     "group": "Stratum2",
+     "font": "Arial",
+     "scale": 1.15,
+     "italic": true
+    },
+    {
+     "group": "A\u0026B \u003c\"x'\u003e",
+     "font": "Roboto",
+     "scale": 1,
+     "width": 1.25
+    }
+   ],
+   "copied": null,
+   "textScale": 1.25
+  }
+ },
+ {
+  "conf": "\u003c?xml version='1.0'?\u003e\n\u003c!DOCTYPE fontconfig SYSTEM 'fonts.dtd'\u003e\n\u003cfontconfig\u003e\n\t\u003c!-- CS2 Font Studio. Delete this file to remove all changes. --\u003e\n\t\u003c!-- state: {\"rules\":null,\"copied\":null,\"textScale\":0.5} --\u003e\n\t\u003cmatch target=\"font\"\u003e\u003cedit name=\"pixelsize\" mode=\"assign\"\u003e\u003ctimes\u003e\u003cname\u003epixelsize\u003c/name\u003e\u003cdouble\u003e0.5\u003c/double\u003e\u003c/times\u003e\u003c/edit\u003e\u003c/match\u003e\n\u003c/fontconfig\u003e\n",
+  "state": {
+   "rules": null,
+   "copied": null,
+   "textScale": 0.5
+  }
+ }
+]

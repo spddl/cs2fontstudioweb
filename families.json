@@ -1,0 +1,491 @@
+{
+ "families": {
+  "Noto Mono": {
+   "areas": {
+    "HUD · Other": 2,
+    "HUD · Team counter": 1,
+    "Other menus": 1
+   },
+   "files": [
+    "hud/hudalerts",
+    "hud/hudhinttext",
+    "hud/hudteamcounter",
+    "teamselectmenu"
+   ]
+  },
+  "Noto Sans": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "operation/operation_shared"
+   ]
+  },
+  "Stratum2": {
+   "areas": {
+    "Other menus": 92,
+    "Main menu": 44,
+    "HUD · Other": 20,
+    "Inventory & store": 14,
+    "Buy menu": 10,
+    "Scoreboard": 10,
+    "End of match": 6,
+    "HUD · Health, ammo, money": 4,
+    "Friends": 2,
+    "Context menus": 1,
+    "Chat": 1,
+    "HUD · Killfeed": 1
+   },
+   "files": [
+    "buymenu",
+    "context_menus/context_menu_navbar_notification",
+    "csgostyles",
+    "endofmatch",
+    "endofmatch-rank",
+    "endofmatch-skillgroup",
+    "endofmatch-voting",
+    "endofmatch-win",
+    "friendtile",
+    "hud/hudalerts",
+    "hud/hudchat",
+    "hud/huddeathpanel",
+    "hud/huddmbonus",
+    "hud/hudhealthammocenter",
+    "hud/hudprogressbar",
+    "hud/hudradar",
+    "hud/hudretake",
+    "hud/hudreticle",
+    "hud/hudrosettaselector",
+    "hud/hudrush",
+    "hud/hudvoicestatus",
+    "hud/hudvote",
+    "hud/hudwinpanel",
+    "hud/hudwinpanel_roundimpactscore",
+    "itemtile",
+    "loadingscreen",
+    "mainmenu",
+    "mainmenu_overwatch",
+    "mainmenu_play",
+    "mainmenu_store",
+    "mainmenu_store_fullscreen",
+    "mainmenu_watch",
+    "mainmenu_xpshop_tile",
+    "mapoverview",
+    "match-reconnect",
+    "matchinfo_scoreboard",
+    "matchmaking_status",
+    "matchtile",
+    "mission_tile",
+    "mission_tile_pausemenu",
+    "operation/operation_main",
+    "operation/operation_shared",
+    "party",
+    "playercard",
+    "popups/popup_accept_match",
+    "popups/popup_can_apply_pick_slot",
+    "popups/popup_capability_nameable",
+    "popups/popup_capability_shared",
+    "popups/popup_confirm_workshop_download",
+    "popups/popup_directchallenge_steamgroups",
+    "popups/popup_leaderboards",
+    "popups/popup_mainmenu_overwatch_verdict",
+    "popups/popup_major_hub",
+    "popups/popup_major_store",
+    "popups/popup_major_store_balance",
+    "popups/popup_news",
+    "popups/popup_offers_laptop_interface",
+    "popups/popup_operation_store",
+    "popups/popup_rankup_redemption_store",
+    "popups/popup_subscription_upsell",
+    "popups/popup_tournament_controlroom",
+    "popups/popup_tournament_journal",
+    "popups/popup_workshop_submit",
+    "popups/popups_shared",
+    "radialmenubase",
+    "radialradio",
+    "rankup_redemption_store",
+    "scoreboard",
+    "settings/settings",
+    "settings/settings_slider",
+    "slider_toggle",
+    "stats/playerstats",
+    "stats/playerstats_matchlister",
+    "steaminputglyphs/steaminputglyphs",
+    "teamintromenu",
+    "teamselectmenu",
+    "tooltips/tooltip_scoreboard_casualties",
+    "tournaments/pickem_common",
+    "vanity_pet_info",
+    "vanityload_inspect"
+   ]
+  },
+  "Stratum2 Black": {
+   "areas": {
+    "Other menus": 1,
+    "HUD · Other": 1
+   },
+   "files": [
+    "csgostyles",
+    "hud/hudrush_newui"
+   ]
+  },
+  "Stratum2 Black Condensed": {
+   "areas": {
+    "Other menus": 2
+   },
+   "files": [
+    "csgostyles",
+    "popups/popup_offers_laptop_interface"
+   ]
+  },
+  "Stratum2 Black Italic": {
+   "areas": {
+    "Other menus": 6
+   },
+   "files": [
+    "csgostyles",
+    "match_stakes",
+    "popups/popup_offers_laptop_interface",
+    "rating_emblem"
+   ]
+  },
+  "Stratum2 Black TF": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Bold": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "settings/settings"
+   ]
+  },
+  "Stratum2 Bold Condensed": {
+   "areas": {
+    "Other menus": 3,
+    "Main menu": 2,
+    "End of match": 1,
+    "HUD · Team counter": 1
+   },
+   "files": [
+    "csgostyles",
+    "endofmatch-characters",
+    "hud/hudteamcounter",
+    "mainmenu_missions",
+    "mainmenu_store_fullscreen",
+    "teamintromenu",
+    "teamselectmenu"
+   ]
+  },
+  "Stratum2 Bold Monodigit": {
+   "areas": {
+    "Other menus": 5,
+    "HUD · Other": 4,
+    "Scoreboard": 3,
+    "Buy menu": 1,
+    "End of match": 1,
+    "Friends": 1
+   },
+   "files": [
+    "buymenu",
+    "csgostyles",
+    "endofmatch",
+    "friendslist",
+    "hud/hudalerts",
+    "hud/hudprogressbar",
+    "hud/hudwinpanel_roundimpactscore",
+    "matchinfo",
+    "matchinfo_scoreboard",
+    "party",
+    "radialmenubase",
+    "radialradio",
+    "scoreboard"
+   ]
+  },
+  "Stratum2 Bold TF": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Condensed": {
+   "areas": {
+    "Other menus": 16,
+    "Inventory & store": 6,
+    "Context menus": 3,
+    "Main menu": 3,
+    "Scoreboard": 3,
+    "Buy menu": 2,
+    "HUD · Team counter": 1
+   },
+   "files": [
+    "buymenu",
+    "context_menus/context_menu_clan_tags",
+    "context_menus/context_menu_get_souvenir",
+    "csgostyles",
+    "hud/hudteamcounter",
+    "leaderboard",
+    "loadout_grid",
+    "mainmenu",
+    "mainmenu_missions",
+    "mainmenu_play",
+    "mission_tile",
+    "popups/popup_leaderboards",
+    "popups/popup_pet_book",
+    "popups/popup_season_stats",
+    "popups/popup_videoclip",
+    "premier_mapwinrecord",
+    "rankup_redemption_store",
+    "rating_emblem",
+    "scoreboard",
+    "segmented_progress_bar",
+    "xpshop",
+    "xpshop_track"
+   ]
+  },
+  "Stratum2 Light": {
+   "areas": {
+    "Inventory & store": 5,
+    "Other menus": 4,
+    "Chat": 1
+   },
+   "files": [
+    "color_picker",
+    "csgostyles",
+    "hud/hudchat",
+    "popups/popup_major_store"
+   ]
+  },
+  "Stratum2 Light Condensed": {
+   "areas": {
+    "Other menus": 4,
+    "HUD · Team counter": 1,
+    "Inventory & store": 1
+   },
+   "files": [
+    "csgostyles",
+    "hud/hudteamcounter",
+    "popups/popup_leaderboards",
+    "popups/popup_premier_pick_ban"
+   ]
+  },
+  "Stratum2 Light Italic": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Light TF": {
+   "areas": {
+    "Other menus": 1,
+    "Main menu": 1
+   },
+   "files": [
+    "csgostyles",
+    "mainmenu_mini_store"
+   ]
+  },
+  "Stratum2 Medium": {
+   "areas": {
+    "Other menus": 4,
+    "HUD · Other": 3,
+    "Context menus": 2,
+    "Main menu": 1,
+    "Inventory & store": 1
+   },
+   "files": [
+    "context_menus/context_menu_get_souvenir",
+    "context_menus/context_menu_lobbies",
+    "csgostyles",
+    "hud/hudrush_newui",
+    "hud/hudwinpanel",
+    "mainmenu_major_tile",
+    "popups/popup_leaderboards",
+    "tournaments/predictions_group_stage",
+    "tournaments/predictions_timer"
+   ]
+  },
+  "Stratum2 Medium Condensed": {
+   "areas": {
+    "Other menus": 20,
+    "Inventory & store": 6,
+    "Main menu": 5,
+    "Buy menu": 2,
+    "Context menus": 2,
+    "HUD · Other": 2
+   },
+   "files": [
+    "buymenu",
+    "context_menus/context_menu_clan_tags",
+    "csgostyles",
+    "hud/hudrush",
+    "hud/hudwinpanel",
+    "itemtile_store",
+    "leaderboard",
+    "mainmenu_missions",
+    "mission_tile",
+    "mission_tile_pausemenu",
+    "popups/pet_book_page_styles",
+    "popups/popup_leaderboards",
+    "popups/popup_major_hub",
+    "popups/popup_season_stats",
+    "teamintromenu",
+    "tournaments/predictions_apply_btn",
+    "tournaments/predictions_group_stage",
+    "vanity-loadout",
+    "vanityload_inspect",
+    "xpshop",
+    "xpshop_track"
+   ]
+  },
+  "Stratum2 Medium Italic": {
+   "areas": {
+    "Other menus": 2,
+    "Inventory & store": 2,
+    "Main menu": 1
+   },
+   "files": [
+    "csgostyles",
+    "leaderboard",
+    "mainmenu",
+    "match_stakes",
+    "popups/popup_leaderboards"
+   ]
+  },
+  "Stratum2 Medium TF": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Mono": {
+   "areas": {
+    "Other menus": 11,
+    "Console": 5,
+    "Buy menu": 2,
+    "Scoreboard": 1
+   },
+   "files": [
+    "buymenu",
+    "csgostyles",
+    "gameconsole",
+    "operation/operation_shared",
+    "popups/popup_season_stats",
+    "scoreboard",
+    "stats/playerstats",
+    "stats/playerstats_linegraph"
+   ]
+  },
+  "Stratum2 Mono Light": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Monodigit": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "mute_spinner"
+   ]
+  },
+  "Stratum2 Regular Monodigit": {
+   "areas": {
+    "Other menus": 3,
+    "Inventory & store": 2,
+    "Buy menu": 1,
+    "Scoreboard": 1
+   },
+   "files": [
+    "buymenu",
+    "csgostyles",
+    "leaderboard",
+    "loadingscreen",
+    "matchinfo_scoreboard",
+    "popups/popup_leaderboards"
+   ]
+  },
+  "Stratum2 TF": {
+   "areas": {
+    "Chat": 2,
+    "Context menus": 1,
+    "Other menus": 1
+   },
+   "files": [
+    "chat",
+    "context_menus/context_menu_playercard",
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Thin": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Thin Condensed": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Thin Italic": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "Stratum2 Thin TF": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "notomono-regular": {
+   "areas": {
+    "Other menus": 1
+   },
+   "files": [
+    "csgostyles"
+   ]
+  },
+  "notosans": {
+   "areas": {
+    "Other menus": 5,
+    "Main menu": 2,
+    "HUD · Other": 1
+   },
+   "files": [
+    "csgostyles",
+    "hud/hudrosettaselector",
+    "mainmenu_play",
+    "mainmenu_watch",
+    "operation/operation_shared",
+    "tooltips/tooltip_mission",
+    "tournaments/pickem_common"
+   ]
+  }
+ }
+}

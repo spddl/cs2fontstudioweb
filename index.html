@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CS2 Font Studio</title>
+<meta name="description" content="Change the fonts of Counter-Strike 2: preview them on the game's screens, then download a zip to unpack into the game folder.">
+<link rel="icon" href="icon.ico">
+<link rel="stylesheet" href="fonts/preview-fonts.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="hlchg">
+<div id="banner" aria-live="polite"></div>
+<div id="drop" hidden><div class="drop-box"><span class="drop-title">Drop to add</span><span>font files (.ttf, .otf, .ttc), a .zip or .json settings</span></div></div>
+<main>
+  <h1 class="visually-hidden">CS2 Font Studio</h1>
+  <div class="toolbar">
+    <div class="tabs" role="tablist" aria-label="Preview screen" id="tabs"></div>
+    <div class="toggles">
+      <label class="sw" title="Outlines every text: blue = its font can be changed, dotted = default font no group reaches, dashed = fixed frame the game clips text to (longer text is cut off, too tall text is clipped).">
+        <input type="checkbox" id="frames"><span class="cap"><i class="knob"></i></span><span>Text frames</span></label>
+      <label class="sw" title="Dims every text that keeps the original font.">
+        <input type="checkbox" id="hlchg" checked><span class="cap"><i class="knob"></i></span><span>Highlight changes</span></label>
+    </div>
+  </div>
+  <div id="stage" role="tabpanel" aria-label="Preview"></div>
+  <p class="hint">Click a text to edit its font group. All texts in the same group light up: they change together.</p>
+</main>
+<aside>
+  <div class="aside-scroll">
+    <div id="srcbox">
+      <div class="row"><span class="ttl">Fonts</span><span id="srcCount">Loading the font list…</span></div>
+      <div class="srcbtns">
+        <button type="button" class="sec sm" id="upBtn" title="Your own .ttf, .otf or .ttc files (or a .zip of them). They stay in this browser.">Upload fonts…</button>
+        <button type="button" class="sec sm" id="urlBtn" title="A direct link to a .ttf/.otf file or a .zip of fonts">From a link…</button>
+        <button type="button" class="sec sm" id="pcBtn" hidden title="Fonts installed on this PC (the browser asks once)">Fonts of this PC</button>
+      </div>
+      <form class="pathform" id="urlForm" hidden>
+        <input type="url" id="urlIn" aria-label="Link to a font file" placeholder="https://…/MyFont.ttf or .zip" autocomplete="off" spellcheck="false">
+        <button type="submit" class="act sm">Add</button>
+        <button type="button" class="sec sm" id="urlCancel">Cancel</button>
+      </form>
+      <div id="ownList"></div>
+      <input type="file" id="fontIn" multiple accept=".ttf,.otf,.ttc,.zip,font/ttf,font/otf,font/collection,application/zip" hidden>
+    </div>
+    <h2>Font groups</h2>
+    <div class="bar"><span id="count">0 groups changed</span>
+      <label class="sw"><input type="checkbox" id="onlychg"><span class="cap"><i class="knob"></i></span><span>Changed only</span></label></div>
+    <input type="search" id="q" placeholder="Filter by group or screen, e.g. chat, mono, bold" aria-label="Filter font groups" autocomplete="off" spellcheck="false">
+    <div class="cfg">
+      <button type="button" class="sec cfgbtn" id="cfgBtn" aria-haspopup="menu" aria-expanded="false" aria-controls="cfgMenu"><span id="cfgLabel">Configurations</span></button>
+      <div id="cfgMenu" role="menu" aria-label="Configurations" hidden></div>
+    </div>
+    <form class="pathform" id="profForm" hidden>
+      <input type="text" id="profName" aria-label="Configuration name" maxlength="60" placeholder="Name, e.g. Competitive HUD" autocomplete="off" spellcheck="false">
+      <button type="submit" class="act sm">Save</button>
+      <button type="button" class="sec sm" id="profCancel">Cancel</button>
+    </form>
+    <input type="file" id="import" accept=".zip,.json,application/zip,application/json" hidden>
+    <div class="fam gtext" id="gtext">
+      <div class="fam-top">
+        <div class="fam-head static"><span class="fam-name">Global text size</span><span class="fam-desc">Scales all text in the game, fallback fonts included</span></div>
+        <button type="button" class="rst" id="gtReset" title="Back to the game's default size" disabled>Reset</button>
+      </div>
+      <div class="ctl">
+        <label class="l" for="gt">Size</label><input id="gt" type="range" min="0.5" max="2" step="0.05" value="1" title="Double-click to reset. Multiplies the size of every font. Fixed frames do not grow, so larger text gets clipped there.">
+        <output id="gtOut" for="gt">×1.00</output>
+      </div>
+    </div>
+    <div id="allbox"></div>
+    <div id="fams"></div>
+    <div id="nomatch" hidden>No group matches the filter.</div>
+    <details id="moreBox"><summary>More groups <span id="moreCount"></span></summary><div id="more"></div></details>
+    <details id="howto"><summary>How to install</summary>
+      <ol>
+        <li>Choose fonts, then <b>Download .zip</b>.</li>
+        <li>Open the game folder: in Steam, right-click <i>Counter-Strike 2</i> → <i>Properties…</i> → <i>Installed Files</i> → <i>Browse…</i>. It opens the folder <code>Counter-Strike Global Offensive</code>.</li>
+        <li>Unpack the zip there and let it replace the files. It only holds a folder <code>game</code>: the fonts go to <code>game\csgo\panorama\fonts</code>, the rules to <code>game\core\panorama\fonts\conf.d\99-spddl.conf</code>.</li>
+        <li>Restart CS2: it reads its fonts only at startup. <a href="steam://rungameid/730">Start CS2 via Steam</a></li>
+      </ol>
+      <p><b>Undo:</b> delete <code>99-spddl.conf</code> (or unpack a zip downloaded without changes). The font files named <code>notosans-…</code> that the zip added can be deleted too; keep the game's own <code>notosans-regular.ttf</code>, <code>notosans-bold.ttf</code> and the other Noto files.</p>
+      <p>Steam's “Verify integrity of game files” leaves the added files alone.</p>
+    </details>
+    <p class="note">Groups you do not change are shown in Stratum2 if it is installed on this PC, otherwise in a similar stand-in font (Saira). In the game they keep using Stratum2.</p>
+    <p class="warn">Preview ≠ game (Pango/FreeType, hintnone). Google fonts come from <a href="https://fontsource.org" target="_blank" rel="noopener">Fontsource</a>; the zip holds Latin, Cyrillic, Greek and Vietnamese characters, other scripts use the game's own fonts.</p>
+  </div>
+  <div class="aside-foot">
+    <div class="dirty" id="dirty"><span class="dot"></span><span id="dirtyText">No changes</span></div>
+    <div class="btns"><button type="button" class="act" id="save" title="Fonts and rules as one zip for the game folder (Ctrl+S)">Download .zip</button><button type="button" class="sec" id="reset" title="Reset all groups">Reset</button></div>
+    <div id="status" role="status" aria-live="polite"></div>
+    <p class="note desktop">No zip to unpack: the <a href="https://github.com/spddl/CS2FontStudio/releases" target="_blank" rel="noopener" title="Applies the fonts straight to the game folder, offers every font installed on the PC, resets cleanly and restarts CS2">Windows desktop version</a> applies the fonts to the game directly and restarts CS2.</p>
+  </div>
+</aside>
+<script src="conf.js"></script>
+<script src="sfnt.js"></script>
+<script src="zip.js"></script>
+<script src="fonts.js"></script>
+<script src="scenes.js"></script>
+<script src="scenes_measured.js"></script>
+<script src="scenes_extra.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

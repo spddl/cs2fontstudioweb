@@ -1,0 +1,8 @@
+{
+  "name": "cs2fontstudioweb",
+  "private": true,
+  "description": "CS2 Font Studio in the browser: Counter-Strike 2 font changes as a zip for the game folder",
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  }
+}
